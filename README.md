@@ -23,9 +23,20 @@ npm run dev
 After a few seconds, your project should be accessible at the address
 [http://localhost:5173/](http://localhost:5173/)
 
-
 If you are satisfied with the result, you can finally build the project for release with:
 
 ```
 npm run build
+```
+
+## Environment Variables
+
+This project uses the following API keys:
+
+- News API Key: `512c187a92ce462383778148dce22a5f`
+
+To use the application, create a `.env` file in the root directory and add the following:
+
+```
+VITE_NEWS_API_KEY=512c187a92ce462383778148dce22a5f
 ```
