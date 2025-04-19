@@ -1,0 +1,148 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --backgroundsdark-blue: rgba(31, 32, 104, 1);
+  --backgroundsice-cold: rgba(235, 243, 255, 1);
+  --backgroundsmidnight-blue: rgba(10, 10, 43, 1);
+  --blue-drop-shadow-for-dark-backgrounds: -5px 7px 0px 0px rgba(81, 82, 251, 1);
+  --brand-colorsbackgroundlight-purple: rgba(221, 221, 253, 1);
+  --brand-colorsbackgroundmain: rgba(26, 28, 49, 1);
+  --brand-colorsbackgroundwhite: rgba(255, 255, 255, 1);
+  --brand-colorspink: rgba(250, 71, 105, 1);
+  --brand-colorspurple: rgba(81, 82, 251, 1);
+  --brandpurple: rgba(81, 82, 251, 1);
+  --desktop-body-text-desktop-font-family: "Inter", Helvetica;
+  --desktop-body-text-desktop-font-size: 18px;
+  --desktop-body-text-desktop-font-style: normal;
+  --desktop-body-text-desktop-font-weight: 400;
+  --desktop-body-text-desktop-letter-spacing: 0px;
+  --desktop-body-text-desktop-line-height: 152.5%;
+  --desktop-footer-paragraph-text-font-family: "Inter", Helvetica;
+  --desktop-footer-paragraph-text-font-size: 14px;
+  --desktop-footer-paragraph-text-font-style: normal;
+  --desktop-footer-paragraph-text-font-weight: 300;
+  --desktop-footer-paragraph-text-letter-spacing: 0px;
+  --desktop-footer-paragraph-text-line-height: 142.5%;
+  --desktop-heading-2-font-family: "Inter", Helvetica;
+  --desktop-heading-2-font-size: 48px;
+  --desktop-heading-2-font-style: normal;
+  --desktop-heading-2-font-weight: 700;
+  --desktop-heading-2-letter-spacing: 0px;
+  --desktop-heading-2-line-height: normal;
+  --desktop-heading-3-font-family: "Inter", Helvetica;
+  --desktop-heading-3-font-size: 32px;
+  --desktop-heading-3-font-style: normal;
+  --desktop-heading-3-font-weight: 700;
+  --desktop-heading-3-letter-spacing: 0px;
+  --desktop-heading-3-line-height: normal;
+  --desktop-heading-4-font-family: "Inter", Helvetica;
+  --desktop-heading-4-font-size: 24px;
+  --desktop-heading-4-font-style: normal;
+  --desktop-heading-4-font-weight: 700;
+  --desktop-heading-4-letter-spacing: 0.6000000000000001px;
+  --desktop-heading-4-line-height: normal;
+  --desktop-title-1-font-family: "Inter", Helvetica;
+  --desktop-title-1-font-size: 16px;
+  --desktop-title-1-font-style: normal;
+  --desktop-title-1-font-weight: 700;
+  --desktop-title-1-letter-spacing: 0.8px;
+  --desktop-title-1-line-height: normal;
+  --pastelpastel-blue: rgba(235, 243, 255, 1);
+  --typographyblack: rgba(0, 0, 0, 1);
+  --typographydark-grey: rgba(131, 138, 144, 1);
+  --typographylight-grey: rgba(205, 208, 210, 1);
+  --typographytypography-anthracite: rgba(30, 30, 30, 1);
+  --typographytypography-grey: rgba(131, 138, 144, 1);
+  --typographywhite: rgba(255, 255, 255, 1);
+  --typographywhite-text: rgba(255, 255, 255, 1);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
